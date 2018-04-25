@@ -7,9 +7,11 @@ duplicate_items([1, 3, 4, 2, 1]) => [1]
 duplicate_items([1, 3, 4, 2, 1, 2, 4]) => [1, 2, 4]
 """
 
+
 # one liner:
 def duplicate_items(list_numbers):
-    return [i for i in set(list_numbers) if list_numbers.count(i)>1]
+    return [i for i in set(list_numbers) if list_numbers.count(i) > 1]
+
 
 # the same - explained:
 def duplicate_items(list_numbers):
@@ -19,11 +21,13 @@ def duplicate_items(list_numbers):
             duplicates.append(i)
     return sorted(duplicates)
 
+
 # return list_number only with duplicate_items (in-place)
 def duplicate_items(list_numbers):
     for i in set(list_numbers):
         list_numbers.remove(i)
     return list_numbers
+
 
 # # stack solution :) O(3)
 # def duplicate_items(list_numbers):
