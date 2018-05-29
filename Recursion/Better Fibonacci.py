@@ -17,8 +17,7 @@ better_fibonacci(3) ==> 2
 """
 
 def better_fibonacci(n):
-    a = 0
-    b = 1
+    a, b = 0, 1
     for i in range(n):
         a, b = b, a + b
     return a
