@@ -22,11 +22,12 @@ def bubble_sort(a):
     while unsorted:
         unsorted = False
         for i in range(passnum):
-            if a[i] > a[i+1]:
-                a[i], a[i+1] = a[i+1], a[i]
+            if a[i] > a[i + 1]:
+                a[i], a[i + 1] = a[i + 1], a[i]
                 unsorted = True
         passnum -= 1
     return a
+
 
 # def bubble_sort(a):
 #     while True:

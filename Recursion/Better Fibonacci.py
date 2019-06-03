@@ -16,6 +16,7 @@ better_fibonacci(1) ==> 1
 better_fibonacci(3) ==> 2
 """
 
+
 def better_fibonacci(n):
     a, b = 0, 1
     for i in range(n):
