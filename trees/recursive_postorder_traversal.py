@@ -19,7 +19,7 @@ class BinaryTree:
         self.left_child = None
         self.right_child = None
 
-    def postorder(self):
+    def postorder(self) -> list:
         if self.left_child:
             self.left_child.postorder()
         if self.right_child:

@@ -1,5 +1,6 @@
 """Recursive Preorder Traversal
-Given a binary tree, write a function to recursively traverse it in the preorder manner. Mark a node as visited by adding its data to the list - pre_ordered_list(defined globally at the top of the editor).
+Given a binary tree, write a function to recursively traverse it in the preorder manner.
+Mark a node as visited by adding its data to the list - pre_ordered_list(defined globally at the top of the editor).
 
 Example:
 
@@ -19,7 +20,7 @@ class BinaryTree:
         self.left_child = None
         self.right_child = None
 
-    def preorder(self):
+    def preorder(self) -> list:
         if self.data:
             pre_ordered_list.append(self.data)
         if self.left_child:
