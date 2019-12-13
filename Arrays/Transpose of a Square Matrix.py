@@ -13,6 +13,7 @@ Modified to:
 0 0
 """
 
+
 # v1: standard in-place matrix transpose
 def transpose_matrix(matrix):
     for i in range(len(matrix) - 1):
@@ -20,10 +21,12 @@ def transpose_matrix(matrix):
             matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
     return matrix
 
+
 # v2: elegant zip solution
 def transpose_matrix(matrix):
     matrix[:] = map(list, zip(*matrix))
     return matrix
+
 
 # v3
 def transpose_matrix(matrix):
@@ -34,7 +37,6 @@ def transpose_matrix(matrix):
     return matrix
 
 
-
-print(transpose_matrix([[1,2,3],
-                        [4,5,6],
-                        [7,8,9]]))
+print(transpose_matrix([[1, 2, 3],
+                        [4, 5, 6],
+                        [7, 8, 9]]))
